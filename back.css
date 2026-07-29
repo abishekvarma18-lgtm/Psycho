@@ -46,6 +46,44 @@ margin-right:50px;
 .nav-link:hover{
 color:#FA8072 ! important;
 }
+
+.navbar {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+.navbar-nav {
+  gap: 45px;          /* even spacing between links, replaces cramped margin-right */
+  align-items: center;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+  position: relative;
+  padding: 6px 2px !important;
+  margin-right: 0 !important;   
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #FA8072;
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover {
+  color: #FA8072 !important;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
 #aa{
   cursor: pointer;
   font-family: Creepster;

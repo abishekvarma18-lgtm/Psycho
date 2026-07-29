@@ -13,9 +13,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
 </head>
 
 <style>
@@ -75,6 +75,45 @@ input{
   align-items: flex-start;
 }
 
+.navbar {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+.navbar-nav {
+  gap: 45px;          /* even spacing between links, replaces cramped margin-right */
+  align-items: center;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+  position: relative;
+  padding: 6px 2px !important;
+  margin-right: 0 !important;   /
+}
+
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #FA8072;
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover {
+  color: #FA8072 !important;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
 @media (max-width:768px){
 
 .den{
@@ -120,7 +159,8 @@ td{
 }
 
 tr:hover{
-    background:#d17a70;
+    background:#f5eded;
+    color: red;
 }
 .whole{
   margin-left: 5px;
@@ -278,34 +318,25 @@ footer {
 </style>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-    <a id="aa" class="navbar-brand"  href="#">Psychology</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-  <span class="navbar-toggler-icon"></span>
-</button>
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <a id="aa" class="navbar-brand" href="#">Psychology</a>
 
-    <div class="collapse navbar-collapse justify-content-end" id="menu">
-      <ul class="navbar-nav">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#menu" aria-controls="menu"
+          aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        <li class="nav-item">
-          <a id="hh" class="nav-link" href="home.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a id="pp" class="nav-link" href="gp.html">History</a>
-        </li>
-        <li class="nav-item">
-          <a id="cc" class="nav-link" href="three.html">Psychologist</a>
-        </li>
-        <li class="nav-item">
-          <a id="rr" class="nav-link" href="crime.html">Crime Cases</a>
-        </li>
-        <li class="nav-item">
-          <a  class="nav-link" href="reserch.html">Researchers</a>
-        </li>
-      </ul>
-    </div>
-    <input type="text" placeholder="search">
-  </nav>
+  <div class="collapse navbar-collapse" id="menu">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="gp.html">History</a></li>
+      <li class="nav-item"><a class="nav-link" href="three.html">Psychologist</a></li>
+      <li class="nav-item"><a class="nav-link" href="crime.html">Crime Cases</a></li>
+      <li class="nav-item"><a class="nav-link" href="reserch.html">Researchers</a></li>
+    </ul>
+  </div>
+</nav>
   <br>
 
   <h1 style="color:#8B0000;   font-family: EB Garamond;">Top most 10 crime cases</h1>
@@ -1623,4 +1654,17 @@ Wichita</td>
 </footer>
 
 </head>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var menuEl = document.getElementById('menu');
+  var bsCollapse = new bootstrap.Collapse(menuEl, { toggle: false });
+
+  document.querySelectorAll('#menu .nav-link').forEach(function (link) {
+    link.addEventListener('click', function () {
+      bsCollapse.hide();
+    });
+  });
+});
+</script>
 </body>

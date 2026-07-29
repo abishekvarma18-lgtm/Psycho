@@ -12,46 +12,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 
 <body style="background-color:#181c28; color: white;">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <a id="aa" class="navbar-brand" href="#">Psychology</a>
 
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top  fixed-top">
-    <a id="aa" class="navbar-brand"  href="#">Psychology</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-  <span class="navbar-toggler-icon"></span>
-</button>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#menu" aria-controls="menu"
+          aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="menu">
-      <ul class="navbar-nav ms-auto">
-
-        <li class="nav-item">
-          <a class="nav-link" href="home.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gp.html">History</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="three.html">Psychologist</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="crime.html">Crime Cases</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="reserch.html">Researchers</a>
-        </li>
-      </ul>
-      <input type="text" placeholder="search">
-    </div>
-       
-  </nav>
+  <div class="collapse navbar-collapse" id="menu">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="gp.html">History</a></li>
+      <li class="nav-item"><a class="nav-link" href="three.html">Psychologist</a></li>
+      <li class="nav-item"><a class="nav-link" href="crime.html">Crime Cases</a></li>
+      <li class="nav-item"><a class="nav-link" href="reserch.html">Researchers</a></li>
+    </ul>
+  </div>
+</nav>
 
   <br>
 
@@ -191,18 +178,6 @@ Understanding the prevalence and impact of psychopathy in police officers is ess
 </div>
 <br>
 <br>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-document.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', () => {
-    document.querySelector('.navbar-collapse').classList.remove('show');
-  });
-});
-</script>
-
-
-<footer>
 <footer>
   <div class="foot">
 
@@ -251,6 +226,18 @@ document.querySelectorAll('.nav-link').forEach(link => {
 </footer>
 
   </div>
-</footer>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  var menuEl = document.getElementById('menu');
+  var bsCollapse = new bootstrap.Collapse(menuEl, { toggle: false });
+
+  document.querySelectorAll('#menu .nav-link').forEach(function (link) {
+    link.addEventListener('click', function () {
+      bsCollapse.hide();
+    });
+  });
+});
+</script>
 </body>
 </html>
