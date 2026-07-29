@@ -1,0 +1,320 @@
+.top-bar{
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  color: white;
+  padding: 10px;
+  position: fixed;
+}
+body {
+  padding-top: 80px;   /* adjust if needed */
+}
+
+
+.navbar{
+  min-height: 80px;
+  background-image: url(wall.webp);
+  background-size: cover;
+  box-shadow: 0 3px 10px rgba(0,0,0,15);
+  position: fixed;
+}
+
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+
+.navbar-toggler{
+border-color:white;
+}
+
+.navbar-toggler-icon{
+filter:invert(1);
+}
+ul{
+  padding-right: 40px;
+}
+.nav-link{
+color:white ! important;
+margin-right:50px;
+}
+
+.nav-link:hover{
+color:#FA8072 ! important;
+}
+#aa{
+  cursor: pointer;
+  font-family: Creepster;
+  font-size: 30px;
+  padding-left: 20px;
+  color:white;
+  animation:flicker 2s infinite;  
+}
+
+#aa:hover{
+  color: #8B0000;
+}
+
+.navbar input{
+width:180px;
+border-radius:10px;
+margin-right: 20px;
+border: none;
+}
+
+
+
+ .slider-wrapper {
+    width:89%;           
+    padding-left: 90px;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    
+}
+.carousel-caption a{
+    text-decoration: none;
+    color: white;
+}
+
+.carousel-inner {
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 450px;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    object-fit: cover;
+}
+
+.carousel-item:hover img {
+  transform: scale(1.15);
+}
+
+.carousel-control-prev {
+    left: 15px;
+}
+
+.carousel-control-next {
+    right: 15px;
+}
+
+.carousel-indicators {
+    bottom: 20px;     
+}
+
+
+.abi{
+  width: 320px;
+  height: 580px;
+  background-color:rgb(38, 37, 37);
+  margin-left: 40px;
+  color: white;
+  display: inline-block;
+  box-shadow: 0 3px 10px rgba(0,0,0,15);
+  border-radius: 5px;
+  
+}
+.im{
+  width: 150px;
+  height:150px;
+  border-top-left-radius: 5px;
+  
+  display: flex;
+}
+.ii{
+  display: flex;
+}
+
+h6{
+  padding-left: 3px;
+  padding-top: 10px;
+}
+.jj{
+  cursor: pointer;
+}
+.jj:hover{
+  background-color:rgb(105, 137, 232);
+  color: red;
+}
+.jj{
+  margin-left: 200px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  border: none;
+}
+.ss{
+  padding-left: 5px;
+}
+
+  h1{
+    margin-bottom:20px;
+    margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .abi{
+    margin-top: 20px;
+  }
+  .phone{
+    padding: 10px;
+  }
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+
+  overflow-x: hidden;
+}
+#co{
+  padding-left: 80px;
+}
+#ex{
+   padding-left: 140px;
+}
+#gl{
+  padding-left: 40px;
+}
+
+footer {
+  width: 100%;
+}
+
+.foot {
+  width: 100%;
+  background-color: black;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+
+.footer-container {
+  width: 96%;
+  height: 350px;
+  background-image:linear-gradient(rgb(0, 0, 0), rgb(255, 0, 0));
+  border-radius: 20px;
+  margin:10px;
+  margin-left: 33px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.footer-col ul li a:hover {
+  color: black;
+}
+  .footer-col a {
+  transition: transform 0.5s ease-out;
+}
+
+.footer-col  {
+  flex: 1 1 250px;
+}
+
+
+.icons {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+
+
+.bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.338);
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .foot {
+    padding: 20px;
+    height: 710px;
+  }
+
+
+  .footer-container {
+    flex-direction: row;
+    align-items: center;
+    text-align:center;
+    height: 630px;
+    margin:auto 
+  }
+ 
+
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #ex{
+    margin-right: 150px;
+    padding: 0%;
+    text-align: left;
+  }
+  #co{
+    margin-right:0px;
+    padding: 0%;
+    text-align: left;
+  }
+  #gl{
+    padding: 0%;
+  }
+  .lion{
+    padding: 0%;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .charge{
+    text-align: left;
+  }
+
+  .icons {
+    justify-content: left;
+  }
+
+  .bottom {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+
+
+
+

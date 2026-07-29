@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psychopathologie</title>
+       <link rel="icon" type="image/png" href="c99eba9f-4d53-43ad-94ac-0c3b8065f612.png">
+
+  <link rel="stylesheet" href="back.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<style>
+
+  body{
+    padding-top:100px;
+    background-color:#0B0F1A;
+    color: white;
+  }
+  .navbar{
+    width: 100%;
+  min-height: 80px;
+  background-image: url(wall.webp);
+  background-size: cover;
+  box-shadow: 0 3px 10px rgba(0,0,0,15);
+  position: fixed;
+}
+
+.navbar-toggler{
+border-color:white;
+}
+
+.navbar-toggler-icon{
+filter:invert(1);
+}
+ul{
+  padding-right: 40px;
+}
+.nav-link{
+color:white ! important;
+margin-right:50px;
+}
+
+.nav-link:hover{
+color:#FA8072 ! important;
+}
+#aa{
+  color: white;
+  cursor: pointer;
+  font-family: Creepster;
+  font-size: 30px;
+  padding-left: 20px;
+}
+#aa:hover{
+  color: #8B0000;   
+}
+
+input{
+  margin-right: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+.den{
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+@media (max-width:768px){
+
+.den{
+  flex-direction:column;
+}
+
+.den img{
+  width:100%;
+  max-width:100%;
+}
+
+.arr{
+  width:100%;
+}
+
+}
+p,.num{
+  padding-left: 20px; 
+}
+
+
+h1{
+    text-align:center;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+
+    
+}
+
+th{
+    background:#333;
+    color: white;
+    padding:12px;
+    border:1px solid #555;
+}
+
+td{
+    padding:10px;
+    border:1px solid #444;
+}
+
+tr:hover{
+    background:#d17a70;
+}
+.whole{
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: EB Garamond;
+  font-size: 19px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+
+  overflow-x: hidden;
+}
+#co{
+  padding-left: 80px;
+}
+#ex{
+   padding-left: 140px;
+}
+#gl{
+  padding-left: 40px;
+}
+
+footer {
+  width: 100%;
+}
+
+.foot {
+  width: 100%;
+  background-color: black;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+
+.footer-container {
+  width: 96%;
+  height: 350px;
+  background-image:linear-gradient(rgb(0, 0, 0), rgb(255, 0, 0));
+  border-radius: 20px;
+  margin:10px;
+  margin-left: 33px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.footer-col ul li a:hover {
+  color: black;
+}
+
+.footer-col  {
+  flex: 1 1 250px;
+}
+
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+
+.bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.338);
+  padding-top: 10px;
+}
+.charge{
+  padding-left: 18px;
+}
+.icons{
+  padding-left: 19px;
+}
+.pen{
+  padding-left: 18px;
+}
+
+@media (max-width: 768px) {
+
+  .foot {
+    padding: 20px;
+    height: 720px;
+  }
+
+
+  .footer-container {
+    flex-direction: row;
+    align-items: center;
+    text-align:center;
+    height: 640px;
+    margin:auto 
+  }
+
+  .footer-col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .icons {
+    justify-content: left;
+  }
+
+  .bottom {
+    width: 100%;
+    text-align: center;
+  }
+
+
+    #ex{
+    margin-right: 150px;
+    padding: 0%;
+    text-align: left;
+  }
+  #co{
+    margin-right:0px;
+    padding: 0%;
+    text-align: left;
+  }
+  .em{
+    padding-left: 2px;
+  }
+  #gl{
+    padding: 0%;
+  }
+  .lion{
+    padding: 0%;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .charge{
+    text-align: left;
+  }
+}
+
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <a id="aa" class="navbar-brand"  href="#">Psychology</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a id="hh" class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a id="pp" class="nav-link" href="gp.html">History</a>
+        </li>
+        <li class="nav-item">
+          <a id="cc" class="nav-link" href="three.html">Psychologist</a>
+        </li>
+        <li class="nav-item">
+          <a id="rr" class="nav-link" href="crime.html">Crime Cases</a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link" href="reserch.html">Researchers</a>
+        </li>
+      </ul>
+    </div>
+    <input type="text" placeholder="search">
+  </nav>
+  <br>
+
+  <h1 style="color:#8B0000;   font-family: EB Garamond;">Top most 10 crime cases</h1>
+
+<div class="whole">
+  <div class="case">
+    <h2 >Case no : 1</h2>
+    <br>
+    <h3>Name : Dennis Lynn Rader</h3>
+    <h3>Born : May 21, 1960</h3>
+    <h3>Died : November 28, 1994</h3>
+    <h3>Nickname : BTK</h3>
+    <div class="den">
+    <img src="btk.avif" > 
+    <img src="soil.jpg" >
+    <div class="arr">
+    <h2 class="num">Arrest : </h2>
+    <p>Rader was arrested while driving near his Park City home shortly after noon on February 25, 2005.<br> <br> An officer asked, "Mr. Rader, do you know why you're going downtown?" Rader replied, "Oh, I have suspicions why."Officers from the Wichita Police Department, the Kansas Bureau of Investigation, and FBI and ATF searched Rader's home and vehicle, seizing evidence including computer equipment, a pair of black pantyhose retrieved from a shed and a cylindrical container.<br> <br> Christ Lutheran Church, Rader's office and the main branch of the Park City library were also searched. At a press conference the next morning, Wichita Police Chief Norman Williams announced, "The bottom line: BTK is arrested."</p>
+    </div>
+    </div>
+    <br>
+
+  
+</head>
+
+<body>
+<div class="bor">
+<h1 style="color:#8B0000 ;">List of Victims</h1>
+
+<table border="1">
+
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Date of attack</th>
+<th>Place of attack</th>
+<th>Cause of death</th>
+</tr>
+
+<tr>
+<td>Joseph Otero</td>
+<td>38</td>
+
+
+<td rowspan="4">January 15, 1974</td>
+<td rowspan="4">
+803 N. Edgemoor Street<br>
+Wichita, Kansas
+</td>
+
+<td>Suffocated with plastic bag</td>
+</tr>
+
+<tr>
+<td>Joseph Otero Jr.</td>
+<td>9</td>
+<td>Hanged with rope</td>
+</tr>
+
+<tr>
+<td>Josephine Otero</td>
+<td>11</td>
+<td>Strangled with rope</td>
+</tr>
+
+<tr>
+<td>Julia Maria Otero</td>
+<td>33</td>
+<td>Strangled with rope</td>
+</tr>
+
+
+<tr>
+<td>Kathryn Doreen Bright</td>
+<td>21</td>
+<td rowspan="2">April 4, 1974</td>
+<td rowspan="2">	3217 E. 13th Street N.,Wichita</td>
+<td>Stabbed with knife</td>
+</tr>
+<tr>
+<td>Kevin Bright</td>
+<td>21</td>
+<td>__________</td>
+</tr>
+
+<tr>
+<td>Shirley Ruth Vian Relford</td>
+<td>24</td>
+<td>March 17, 1977</td>
+<td>1311 S. Hydraulic Street,
+Wichita</td>
+<td>Strangled with rope</td>
+</tr>
+
+<tr>
+  <td>Nancy Jo Fox</td>
+  <td>25</td>
+  <td>December 8, 1977</td>
+  <td>843 S. Pershing Street,
+Wichita</td>
+<td>Strangled with belt</td>
+</tr>
+
+<tr>
+  <td>Marine Wallace Hedge</td>
+  <td>53</td>
+  <td>April 27, 1985</td>
+  <td>6254 N. Independence Street,
+Park City, Kansas</td>
+<td>Strangled bare-handed</td>
+</tr>
+
+<tr>
+  <td>Vicki Lynn Wegerle</td>
+  <td>28</td>
+  <td>September 16, 1986</td>
+  <td>2404 W. 13th Street N.,
+Wichita</td>
+<td>Strangled with nylon stocking</td>
+</tr>
+
+<tr>
+  <td>Dolores Earline Johnson Davis</td>
+  <td>62</td>
+  <td>January 19, 1991</td>
+  <td>6226 N. Hillside Street,
+Wichita</td>
+<td>Strangled with pantyhose</td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<center>
+<hr width="50%">
+</center>
+
+  <div class="case">
+    <h2 >Case no : 2</h2>
+    <br>
+    <h3>Name : Jeffrey Lionel Dahmer</h3>
+    <h3>Born :  March 9, 1945</h3>
+    <h3>Died : 28 Nov, 1994</h3>
+    <h3>Nickname : The Milwaukee Cannibal</h3>
+    <h3></h3>
+    <div class="den">
+    <img src="jd.webp" width="450px" > 
+    <img src="trank.webp" style="width: 300px;" >
+    <div class="arr">
+    <h2 class="num">Arrest : </h2>
+    <p>On July 22, 1991, Dahmer approached three men with an offer of $100 to accompany him to his apartment to pose for nude photographs, drink beer and simply keep him company. Only one of the three men, 32-year-old Tracy Edwards, agreed to accompany him to his apartment. Upon entering Dahmer's apartment, Edwards noted a foul odor and several boxes of hydrochloric acid on the floor, which Dahmer claimed to use for cleaning bricks. After some minor conversation, Edwards responded to Dahmer's request to turn his head and view his tropical fish, whereupon Dahmer placed a handcuff upon his wrist. When Edwards asked, "What's happening?" Dahmer unsuccessfully attempted to cuff his wrists together, then told Edwards to accompany him to the bedroom to pose for nude pictures. While inside the bedroom, Edwards noted nude male posters on the wall and that a videotape of The Exorcist III was playing.</p>
+    </div>
+    </div>
+    <br>
+
+<div class="bor">
+<h1 style="color:#8B0000 ;">List of Victims</h1>
+<table border="1">
+
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Date of attack</th>
+<th>Place of attack</th>
+<th>Cause of death</th>
+</tr>
+
+
+
+<tr>
+<td>Steven Mark Hicks</td>
+<td>18</td>
+<td>June 18, 1978</td>
+<td>Bath Township, Ohio</td>
+<td>Blunt force trauma and strangulation</td>
+</tr>
+
+<tr>
+  <td>Steven Tuomi</td>
+  <td>25</td>
+  <td>Nov 1987</td>
+  <td>Ambassador Hotel, Milwaukee</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>James Doxtator</td>
+  <td>14</td>
+  <td>Jan 1988</td>
+  <td>Dahmer’s grandmother’s house, Milwaukee</td>
+<td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Richard Guerrero</td>
+  <td>25</td>
+  <td>Mar 1988</td>
+  <td>Dahmer’s grandmother’s house, Milwaukee</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Anthony Sears</td>
+  <td>24</td>
+  <td>Mar 1989</td>
+  <td>Dahmer’s grandmother’s house, Milwaukee</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Raymond Smith (Ricky Beeks)</td>
+  <td>33</td>
+  <td>May 1990</td>
+  <td>Oxford Apartments, Milwaukee</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Edward Smith</td>
+  <td>27</td>
+  <td>June 1990</td>
+  <td>Oxford Apartments, Milwaukee</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Ernest Miller</td>
+  <td>23</td>
+  <td>Sept 1990</td>
+  <td>Oxford Apartments, Milwaukee</td>
+  <td>Throat cut</td>
+</tr>
+
+<tr>
+  <td>David Thomas</td>
+  <td>23</td>
+  <td>Sept 1990</td>
+  <td>Oxford Apartments, Milwaukee</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Curtis Straughter</td>
+  <td>18</td>
+  <td>Feb 1991</td>
+  <td>Oxford Apartments, Milwaukee</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Errol Lindsey</td>
+  <td>19</td>
+  <td>Apr 1991</td>
+  <td>Oxford Apartments, Milwaukee</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Tony Hughes</td>
+  <td>31</td>
+  <td>May 1991</td>
+  <td>Oxford Apartments, Milwaukee</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Konerak Sinthasomphone</td>
+  <td>14</td>
+  <td>May 1991</td>
+  <td>Oxford Apartments, Milwaukee</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Matt Turner</td>
+  <td>20</td>
+  <td>June 1991</td>
+  <td>Oxford Apartments, Milwaukee</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Jeremiah Weinberger</td>
+  <td>23</td>
+  <td>July 1991</td>
+  <td>Oxford Apartments, Milwaukee</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Oliver Lacy</td>
+  <td>24</td>
+  <td>July 1991</td>
+  <td>Oxford Apartments, Milwaukee</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Joseph Bradehoft</td>
+  <td>25</td>
+  <td>July 1991</td>
+  <td>Oxford Apartments, Milwaukee</td>
+  <td>Strangulation</td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<center>
+<hr width="50%">
+</center>
+
+
+  <div class="case">
+    <h2 >Case no : 3</h2>
+    <br>
+    <h3>Name : Aileen Carol Wuornos</h3>
+    <h3>Born :  MFebruary 29, 1956</h3>
+    <h3>Died : October 9, 2002</h3>
+    <h3>Nicknamed : "Lee" / "The Damsel of Death"</h3>
+    <h3></h3>
+    <div class="den">
+    <img src="Aileen.jpeg" width="450px" > 
+    <img src="gun2.jpg" style="width: 300px;" >
+    <div class="arr">
+    <h2 class="num">Arrest : </h2>
+    <p>On July 4, 1990, Wuornos and Moore abandoned victim Peter Siems' car after they were involved in a crash. Rhonda Bailey, who witnessed the crash, provided police with a description of two women, which later led to a media campaign to locate them.Police also found some of the victims' belongings in pawnshops.Wuornos' fingerprint that was found on a receipt at one of the pawnshops matched the print that was left in Siems' car. Wuornos had a criminal record in Florida, and samples of her prints were in a database.</p>
+    </div>
+    </div>
+    <br>
+
+    <h3>Why This Case Became Famous?</h3>
+    <ol>
+      <li>Serial Killings: Wuornos murdered at least seven men, making her one of the most infamous female serial killers in American history.</li>
+      <li>Childhood Abuse: Her traumatic childhood, marked by abuse and neglect, significantly influenced her behavior and led to her committing violent crimes.</li>
+      <li>Legal and Social Impact: Wuornos' case raised debates about the intersections of abuse, mental illness, and crime, and her story has been widely discussed and analyzed.</li>
+      <li>Media Attention: Her story was portrayed in the film "Monster" (2003), starring Charlize Theron, which won her an Academy Award for Best Actress.</li>
+    </ol>
+
+<div class="bor">
+<h1 style="color:#8B0000 ;">List of Victims</h1>
+<table border="1">
+
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Date of attack</th>
+<th>Place of attack</th>
+<th>Cause of death</th>
+</tr>
+
+
+<tr>
+  <td>Richard Mallory</td>
+  <td>51</td>
+  <td>Nov 30, 1989</td>
+  <td>Clearwater, Florida</td>
+  <td>Gunshot wounds</td>
+</tr>
+
+<tr>
+  <td>David Spears</td>
+  <td>43</td>
+  <td>May 19, 1990</td>
+  <td>Citrus County, Florida</td>
+  <td>Gunshot wounds</td>
+</tr>
+
+<tr>
+  <td>Charles Carskaddon</td>
+  <td>40</td>
+  <td>June 1, 1990</td>
+  <td>Pasco County, Florida</td>
+  <td>Gunshot wounds</td>
+</tr>
+
+<tr>
+  <td>Peter Siems</td>
+  <td>65</td>
+  <td>June 4, 1990</td>
+  <td>Orange Springs, Florida</td>
+  <td>Gunshot wounds</td>
+</tr>
+
+<tr>
+  <td>Troy Burress</td>
+  <td>50</td>
+  <td>July 4, 1990</td>
+  <td>Marion County, Florida</td>
+  <td>Gunshot wounds</td>
+</tr>
+
+<tr>
+  <td>Charles Humphreys</td>
+  <td>56</td>
+  <td>Sept 11, 1990</td>
+  <td>Clearwater, Florida</td>
+  <td>Gunshot wounds</td>
+</tr>
+
+<tr>
+  <td>Walter Antonio</td>
+  <td>62</td>
+  <td>Nov 19, 1990</td>
+  <td>Dixie County, Florida</td>
+  <td>Gunshot wounds</td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+
+<center>
+<hr width="50%">
+</center>
+
+  <div class="case">
+    <h2 >Case no : 4</h2>
+    <br>
+    <h3>Name : Gary Leon Ridgway</h3>
+    <h3>Born :  February 18, 1949</h3>
+    <h3>Nickname: Green River Killer</h3>
+    <div class="den">
+    <img src="river.webp" width="450px" > 
+    <img src="amu.jpg" style="width: 300px;" >
+    <div class="arr">
+    <h2 class="num">Arrest : </h2>
+    <p>On November 30, 2001, police arrested Gary Ridgway as a suspect in the Green River Killer case. The case involved the murders of at least 49 young women beginning in 1982, many of whom were prostitutes. Ridgway's arrest was a significant moment in the investigation, as he was believed to be the most prolific serial killer in United States history at the time. Ridgway was arrested while he was leaving the Kenworth truck  factory where he worked in Renton, Washington. As part of a plea bargain, he agreed to disclose the locations of still-missing women, which spared him from the death penalty and resulted in a life sentence without the possibility of parole. </p>
+    </div>
+    </div>
+    <br>
+    <h3>(Ridgway later confessed to dozens more victims; authorities confirmed 49 victims in total.)</h3> <br>
+    <h3>Investigation : <br>
+    (The Green River Task Force became one of the largest investigations in U.S. history.)</h3>
+    <br>
+        <h3>Why This Case Became Famous?</h3>
+    <ol>
+      <li>Massive police task force.</li>
+      <li>Hundreds of suspects.</li>
+      <li>Early DNA technology.</li>
+      <li>Interviews with thousands of people.</li>
+    </ol>
+
+    <div class="bor">
+<h1 style="color:#8B0000 ;">List of Victims</h1>
+<table border="1">
+
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Date of attack</th>
+<th>Place of attack</th>
+<th>Cause of death</th>
+</tr>
+
+
+<tr>
+  <td>Wendy Lee Coffield</td>
+  <td>16</td>
+  <td>July 8, 1982</td>
+  <td>Seattle, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Debra Lynn Bonner</td>
+  <td>23</td>
+  <td>July 25, 1982</td>
+  <td>SeaTac, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Marcia Fay Chapman</td>
+  <td>31</td>
+  <td>Aug 1, 1982</td>
+  <td>Seattle, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Cynthia Jean Hinds</td>
+  <td>17</td>
+  <td>Aug 15, 1982</td>
+  <td>Seattle, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Opal Charmaine Mills</td>
+  <td>16</td>
+  <td>Aug 12, 1982</td>
+  <td>King County, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Terry Renee Milligan</td>
+  <td>16</td>
+  <td>Aug 30, 1982</td>
+  <td>Seattle, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Sandra Kay Gabbert</td>
+  <td>17</td>
+  <td>Sept 17, 1982</td>
+  <td>Seattle, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Cynthia Jane Johnson</td>
+  <td>17</td>
+  <td>Dec 26, 1982</td>
+  <td>Seattle, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Carol Ann Christensen</td>
+  <td>21</td>
+  <td>Jan 8, 1983</td>
+  <td>Seattle, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Mary Bridget Meehan</td>
+  <td>18</td>
+  <td>Feb 15, 1983</td>
+  <td>Seattle, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Debra Lynn Estes</td>
+  <td>15</td>
+  <td>Mar 1983</td>
+  <td>Seattle, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Kimberly Ann Nelson</td>
+  <td>21</td>
+  <td>Mar 1983</td>
+  <td>Seattle, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Kelly Ware</td>
+  <td>22</td>
+  <td>July 1983</td>
+  <td>Seattle, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Diane Childers</td>
+  <td>23</td>
+  <td>July 1983</td>
+  <td>Seattle, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Christine Kildahl</td>
+  <td>17</td>
+  <td>July 1983</td>
+  <td>Seattle, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Sandra Major</td>
+  <td>20</td>
+  <td>Aug 1983</td>
+  <td>Seattle, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Colleen Brockman</td>
+  <td>15</td>
+  <td>May 1984</td>
+  <td>Seattle, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Lisa Yates</td>
+  <td>19</td>
+  <td>Dec 1987</td>
+  <td>Seattle, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Mary Malvar</td>
+  <td>18</td>
+  <td>Apr 1983</td>
+  <td>King County, Washington</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Anna Riley</td>
+  <td>18</td>
+  <td>May 1986</td>
+  <td>Seattle, Washington</td>
+  <td>Strangulation</td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+
+<center>
+<hr width="50%">
+</center>
+
+  <div class="case">
+    <h2 >Case no : 5</h2>
+    <br>
+    <h3>Name : David Richard Berkowitz</h3>
+    <h3>Born :  June 1, 1953</h3>
+    <h3>Nickname: Son of Sam</h3>
+    <div class="den">
+    <img src="sam.avif" width="450px" > 
+    <img src="death.webp" style="width: 300px;" >
+    <div class="arr">
+    <h2 class="num">Arrest : </h2>
+    <p>On July 4, 1990, Wuornos and Moore abandoned victim Peter Siems' car after they were involved in a crash. Rhonda Bailey, who witnessed the crash, provided police with a description of two women, which later led to a media campaign to locate them.Police also found some of the victims' belongings in pawnshops.Wuornos' fingerprint that was found on a receipt at one of the pawnshops matched the print that was left in Siems' car. Wuornos had a criminal record in Florida, and samples of her prints were in a database.</p>
+    </div>
+    </div>
+    <br>
+    <h3>Why This Case Became Famous?</h3>
+    <ol>
+      <li>One of the most feared crime sprees in New York history.</li>
+      <li>Media panic across the city.</li>
+      <li>Letters sent by the killer to newspapers.</li>
+      <li>Massive police investigation.</li>
+    </ol>
+
+        <div class="bor">
+<h1 style="color:#8B0000 ;">List of Victims</h1>
+<table border="1">
+
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Date of attack</th>
+<th>Place of attack</th>
+<th>Cause of death</th>
+</tr>
+
+<tr>
+  <td>Donna Lauria</td>
+  <td>18</td>
+  <td>July 29, 1976</td>
+  <td>Bronx, New York City</td>
+  <td>Gunshot wounds</td>
+</tr>
+
+<tr>
+  <td>Christine Freund</td>
+  <td>26</td>
+  <td>Jan 30, 1977</td>
+  <td>Queens, New York City</td>
+  <td>Gunshot wounds</td>
+</tr>
+
+<tr>
+  <td>Virginia Voskerichian</td>
+  <td>19</td>
+  <td>Mar 8, 1977</td>
+  <td>Manhattan, New York City</td>
+  <td>Gunshot wounds</td>
+</tr>
+
+<tr>
+  <td>Valentina Suriani</td>
+  <td>18</td>
+  <td>Apr 17, 1977</td>
+  <td>Bronx, New York City</td>
+  <td>Gunshot wounds</td>
+</tr>
+
+<tr>
+  <td>Alexander Esau</td>
+  <td>20</td>
+  <td>Apr 17, 1977</td>
+  <td>Bronx, New York City</td>
+  <td>Gunshot wounds</td>
+</tr>
+
+<tr>
+  <td>Stacy Moskowitz</td>
+  <td>20</td>
+  <td>July 31, 1977</td>
+  <td>Brooklyn, New York City</td>
+  <td>Gunshot wounds</td>
+</tr>
+</table>
+<br>
+<br>
+
+        <div class="bor">
+<h1 style="color: cornflowerblue;">Injured Victims (Survivors)</h1>
+
+<table border="1">
+
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Date of attack</th>
+<th>Place of attack</th>
+<th>Cause of death</th>
+</tr>
+
+<tr>
+  <td>Carl Denaro</td>
+  <td>20</td>
+  <td>Oct 23, 1976</td>
+  <td>Bronx</td>
+  <td>Gunshot wounds</td>
+</tr>
+
+<tr>
+  <td>Rosemary Keenan</td>
+  <td>18</td>
+  <td>Oct 23, 1976</td>
+  <td>Bronx</td>
+  <td>Gunshot wounds</td>
+</tr>
+
+<tr>
+  <td>John Diel</td>
+  <td>30</td>
+  <td>Nov 27, 1976</td>
+  <td>Queens</td>
+  <td>Gunshot wounds</td>
+</tr>
+
+<tr>
+  <td>Michelle Forman</td>
+  <td>16</td>
+  <td>Nov 27, 1976</td>
+  <td>Queens</td>
+  <td>Gunshot wounds</td>
+</tr>
+
+<tr>
+  <td>Salvatore Lupo</td>
+  <td>20</td>
+  <td>Apr 17, 1977</td>
+  <td>Queens</td>
+  <td>Gunshot wounds</td>
+</tr>
+
+<tr>
+  <td>Judy Placido</td>
+  <td>17</td>
+  <td>June 26, 1977</td>
+  <td>Bronx</td>
+  <td>Gunshot wounds</td>
+</tr>
+
+<tr>
+  <td>Robert Violante</td>
+  <td>20</td>
+  <td>July 31, 1977</td>
+  <td>Brooklyn</td>
+  <td>Gunshot wounds</td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<center>
+<hr width="50%">
+</center>
+
+  <div class="case">
+    <h2 >Case no : 6</h2>
+    <br>
+    <h3>Name : Andrei Romanovich Chikatilo</h3>
+    <h3>Born : October 16, 1936</h3>
+    <h3>Died : February 14, 1994</h3>
+    <h3>Nickname: The Butcher of Rostov / The Rostov Ripper</h3>
+    <div class="den">
+    <img src="andrei.webp" width="450px" > 
+    <img src="andrei2.jpg" style="width: 300px;" >
+    <div class="arr">
+    <h2 class="num">Arrest : </h2>
+    <p>On 13 September 1984, Chikatilo was observed by two undercover detectives attempting to talk to young women at a Rostov bus station. The detectives followed him as he wandered through the city, trying to approach women and committing acts of frotteurism in public places. Upon Chikatilo's arrival at the city's central market he was arrested and held. A search of his belongings revealed a knife with a 20-centimetre (7.9 in) blade, several lengths of rope, and a jar of Vaseline.He was also discovered to be under investigation for minor theft at one of his former employers, which gave the investigators the legal right to hold him for a prolonged period of time. Chikatilo's dubious background was uncovered, and his physical description matched the description of the man seen walking alongside Dmitry Ptashnikov prior to the boy's murder. A sample of Chikatilo's blood was taken, the results of which revealed his blood group to be type A, whereas semen samples found upon a total of six victims murdered by the unknown killer throughout the spring and summer of 1984 had been classified by medical examiners as being type AB.</p>
+    </div>
+    </div>
+    <br>
+        <h2>(Authorities confirmed 52 victims in total.)<br></h2>
+    <h3>Why This Case Became Famous?</h3>
+    <ol>
+      <li>One of the largest serial murder cases in Soviet history.</li>
+      <li>Investigation lasted more than a decade.</li>
+      <li>Police initially arrested the wrong suspect before finding Chikatilo..</li>
+    </ol>
+
+  <div class="bor">
+<h1 style="color:#8B0000 ;">List of Victims</h1>
+<table border="1">
+
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Date of attack</th>
+<th>Place of attack</th>
+<th>Cause of death</th>
+</tr>
+
+<tr>
+  <td>Yelena Zakotnova</td>
+  <td>18</td>
+  <td>Dec 22, 1978</td>
+  <td>Shakhty, Russia</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Larisa Tkachenko</td>
+  <td>17</td>
+  <td>Sept 1981</td>
+  <td>Rostov Oblast</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Olga Kravchenko</td>
+  <td>10</td>
+  <td>July 1982</td>
+  <td>Rostov region</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Sergey Markov</td>
+  <td>14</td>
+  <td>Oct 1983</td>
+  <td>Rostov region</td>
+  <td>Stabbing</td>
+</tr> 
+
+<tr>
+  <td>Irina Gorbunova</td>
+  <td>09</td>
+  <td>Dec 1983</td>
+  <td>Rostov region</td>
+  <td>Stabbing</td>
+</tr> 
+
+<tr>
+  <td>Andrei Kravchenko</td>
+  <td>10</td>
+  <td>Jan 1984</td>
+  <td>Rostov region</td>
+  <td>Stabbing</td>
+</tr> 
+
+<tr>
+  <td>Yevgeny Dolgov</td>
+  <td>09</td>
+  <td>May 1984</td>
+  <td>Rostov region</td>
+  <td>Stabbing</td>
+</tr> 
+
+<tr>
+  <td>Natalya Shalashneva</td>
+  <td>17</td>
+  <td>Sept 1984</td>
+  <td>Rostov region</td>
+  <td>Stabbing</td>
+</tr> 
+
+<tr>
+  <td>Marina Bondarenko</td>
+  <td>09</td>
+  <td>July 1985</td>
+  <td>Rostov region</td>
+  <td>Stabbing</td>
+</tr> 
+
+<tr>
+  <td>Sergey Shein</td>
+  <td>12</td>
+  <td>Aug 1985</td>
+  <td>Rostov region</td>
+  <td>Stabbing</td>
+</tr> 
+</table>
+</div>
+<br>
+<br>
+<center>
+<hr width="50%">
+</center>
+
+  <div class="case">
+    <h2 >Case no : 7</h2>
+    <br>
+    <h3>Name : Pedro Alonso López</h3>
+    <h3>Born : October 16, 1936</h3>
+    <h3>Died : Not confirmed</h3>
+    <h3>Official status : Unknown / missing</h3>
+    <h3>Nickname: Monster of the Andes</h3>
+    <div class="den">
+    <img src="lopezz.jpg" width="400px" > 
+    <img src="newsss.jpeg" width="450px;" >
+    <div class="arr">
+    <h2 class="num">Arrest : </h2>
+    <p>Three days after the flood, López approached 12-year-old Marina (or María) Román Poveda, who was working at the Plaza Rosa market on at Plaza Urbina. López flirted with the girl and offered her 100 sucres to show him around the city, but she refused to go with the stranger. She told her mother Carolina of López's advances, and recognising López, she screamed at him and grabbed him by the arm. She told bystanders that López had tried to abduct her daughter and was potentially responsible for the murders of the recently discovered girls. Local merchants were able to overpower López and hold him until the police arrived.</p>
+    </div>
+    </div>
+    <br>
+    <h2>(Many victims were never formally identified.)<br></h2>
+    <h3>Why This Case Became Famous?</h3>
+    <ol>
+      <li>One of the largest serial murder cases ever recorded.</li>
+      <li>Crimes occurred across three countries in South America.</li>
+      <li>López confessed to over 300 murders.</li>
+      <li>Released after only 16 years in prison.</li>
+    </ol>
+
+            <div class="bor">
+<h1 style="color:#8B0000 ;">List of Victims</h1>
+<table border="1">
+
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Date of attack</th>
+<th>Place of attack</th>
+<th>Cause of death</th>
+</tr>
+
+<tr>
+  <td>María Piedad</td>
+  <td>10</td>
+  <td>1980</td>
+  <td>Ambato, Ecuador</td>
+  <td>Strangulation</td>
+</tr> 
+
+<tr>
+  <td>Rosa Delgado</td>
+  <td>11</td>
+  <td>1979</td>
+  <td>Quito region, Ecuador</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Lucia Fernandez</td>
+  <td>09</td>
+  <td>1978</td>
+  <td>Peru Andes region</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Carmen Vargas</td>
+  <td>12</td>
+  <td>1977</td>
+  <td>Colombia Andes region</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Ana Torres</td>
+  <td>10</td>
+  <td>1979</td>
+  <td>Ecuador mountain area</td>
+  <td>Strangulation</td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<center>
+<hr width="50%">
+</center>
+
+  <div class="case">
+    <h2 >Case no : 8</h2>
+    <br>
+    <h3>Name : Dr. Henry Howard Holmes </h3>
+    <h3>Born : May 16, 1861</h3>
+    <h3>Died : May 7, 1896</h3>
+    <h3>Nickname: America’s First Serial Killer / The Chicago Murderer</h3>
+    <div class="den">
+    <img src="HH.H" width="400px" > 
+    <img src="HH.body.jpg" width="450px;" >
+    <div class="arr">
+    <h2 class="num">Arrest : </h2>
+    <p>Three days after the flood, López approached 12-year-old Marina (or María) Román Poveda, who was working at the Plaza Rosa market on at Plaza Urbina. López flirted with the girl and offered her 100 sucres to show him around the city, but she refused to go with the stranger. She told her mother Carolina of López's advances, and recognising López, she screamed at him and grabbed him by the arm. She told bystanders that López had tried to abduct her daughter and was potentially responsible for the murders of the recently discovered girls. Local merchants were able to overpower López and hold him until the police arrived.</p>
+    </div>
+    </div>
+    <br>
+    <h2>This is the most famous case in America<br></h2>
+    <h3>Why This Case Became Famous?</h3>
+    <ol>
+      <li>One of the earliest famous serial killer cases in the United States.</li>
+      <li>The mysterious Chicago “Murder Castle”.</li>
+      <li>Occurred during the huge 1893 World’s Fair.</li>
+    </ol>
+
+            <div class="bor">
+<h1 style="color:#8B0000 ;">List of Victims</h1>
+<table border="1">
+
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Date of attack</th>
+<th>Place of attack</th>
+<th>Cause of death</th>
+</tr>
+
+<tr>
+  <td>Julia Smythe Connor</td>
+  <td>25</td>
+  <td>1891</td>
+  <td>Chicago, Illinois</td>
+  <td>Poisoning</td>
+</tr>
+
+<tr>
+  <td>Pearl Connor</td>
+  <td>08</td>
+  <td>1891</td>
+  <td>Chicago, Illinois</td>
+  <td>Poisoning</td>
+</tr>
+
+<tr>
+  <td>Emeline Cigrand</td>
+  <td>28</td>
+  <td>1892</td>
+  <td>Chicago, Illinois</td>
+  <td>Strangulation</td>
+</tr>
+
+<tr>
+  <td>Minnie Williams</td>
+  <td>24</td>
+  <td>1893</td>
+  <td>Chicago, Illinois</td>
+  <td>Murdered (exact method unclear)</td>
+</tr>
+
+<tr>
+  <td>Nannie Williams</td>
+  <td>27</td>
+  <td>1893</td>
+  <td>Chicago, Illinois</td>
+  <td>Murdered (exact method unclear)</td>
+</tr>
+
+<tr>
+  <td>Benjamin Pitezel</td>
+  <td>43</td>
+  <td>1894</td>
+  <td>Philadelphia, Pennsylvania</td>
+  <td>Poisoning</td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+
+<center>
+<hr width="50%">
+</center>
+
+  <div class="case">
+    <h2 >Case no : 9</h2>
+    <br>
+    <h3>Name : Harold Frederick Shipman</h3>
+    <h3>Born : January 14, 1946</h3>
+    <h3>Died : January 13, 2004</h3>
+    <h3>Nickname: Dr. Death</h3>
+    <div class="den">
+    <img src="Shipman.webp" width="400px" > 
+    <img src="injection.webp" width="350px;" >
+    <div class="arr">
+    <h2 class="num">Arrest : </h2>
+    <p>THarold Shipman was arrested on September 7, 1998, by Greater Manchester Police for the murder of Kathleen Grundy. His arrest marked the beginning of investigations that revealed he was responsible for the deaths of over 200 patients. Following his arrest, Shipman was convicted of 15 counts of murder in January 2000.</p>
+    </div>
+    </div>
+    <br>
+    <h3>(Shipman was convicted of 15 murders, but investigations later suggested over 200 victims.)</h3>
+    <h3>Why This Case Became Famous?</h3>
+    <ol>
+      <li>One of the worst medical serial killer cases ever recorded.</li>
+      <li>Victims were patients who trusted their doctor.</li>
+      <li>Led to major reforms in medical monitoring systems in the UK.</li>
+    </ol>
+
+            <div class="bor">
+<h1 style="color:#8B0000 ;">List of Victims</h1>
+<table border="1">
+
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Date of attack</th>
+<th>Place of attack</th>
+<th>Cause of death</th>
+</tr>
+
+<tr>
+  <td>Marie Quinn</td>
+  <td>67</td>
+  <td>1995</td>
+  <td>Hyde, England</td>
+  <td>Morphine injection</td>
+</tr>
+
+<tr>
+  <td>Winifred Mellor</td>
+  <td>73</td>
+  <td>1998</td>
+  <td>Hyde, England</td>
+  <td>Morphine injection</td>
+</tr>
+
+<tr>
+  <td>Joan Melia</td>
+  <td>73</td>
+  <td>1998</td>
+  <td>Hyde, England</td>
+  <td>Morphine injection</td>
+</tr>
+
+<tr>
+  <td>Kathleen Grundy</td>
+  <td>81</td>
+  <td>1998</td>
+  <td>Hyde, England</td>
+  <td>Morphine injection</td>
+</tr>
+
+<tr>
+  <td>Jean Lilley</td>
+  <td>71</td>
+  <td>1997</td>
+  <td>Hyde, England</td>
+  <td>Morphine injection</td>
+</tr>
+
+<tr>
+  <td>Ivy Lomas</td>
+  <td>63</td>
+  <td>1998</td>
+  <td>Hyde, England</td>
+  <td>Morphine injection</td>
+</tr>
+
+<tr>
+  <td>Irene Turner</td>
+  <td>67</td>
+  <td>1998</td>
+  <td>Hyde, England</td>
+  <td>Morphine injection</td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+
+<center>
+<hr width="50%">
+</center>
+
+  <div class="case">
+    <h2 >Case no : 10</h2>
+    <br>
+    <h3>Name : Harold Frederick Shipman</h3>
+    <h3>Born : April 9, 1974</h3>
+    <h3>Nickname: Chessboard Killer / Bitsa Park Killer</h3>
+    <div class="den">
+    <img src="ap.webp" width="400px" > 
+    <img src="alex.webp" width="350px;" >
+    <div class="arr">
+    <h2 class="num">Arrest : </h2>
+    <p>THarold Shipman was arrested on September 7, 1998, by Greater Manchester Police for the murder of Kathleen Grundy. His arrest marked the beginning of investigations that revealed he was responsible for the deaths of over 200 patients. Following his arrest, Shipman was convicted of 15 counts of murder in January 2000.</p>
+    </div>
+    </div>
+    <br>
+    <h3>(Authorities confirmed 49 victims, though Pichushkin claimed more.)</h3>
+    <h3>Why This Case Became Famous?</h3>
+    <ol>
+      <li>One of the largest serial murder cases in Russia.</li>
+      <li>Crimes occurred over 14 years.</li>
+      <li>The killer planned to reach 64 victims like a chessboard.</li>
+    </ol>
+
+            <div class="bor">
+<h1 style="color:#8B0000 ;">List of Victims</h1>
+<table border="1">
+
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Date of attack</th>
+<th>Place of attack</th>
+<th>Cause of death</th>
+</tr>
+
+<tr>
+  <td>Mikhail Odiychuk</td>
+  <td>52</td>
+  <td>2001</td>
+  <td>Moscow</td>
+  <td>Blunt force trauma</td>
+</tr>
+
+<tr>
+  <td>Sergey Frolov</td>
+  <td>67</td>
+  <td>2002</td>
+  <td>Bitsa Park</td>
+  <td>Blunt force trauma</td>
+</tr>
+
+<tr>
+  <td>Viktor Kuznetsov</td>
+  <td>61</td>
+  <td>2002</td>
+  <td>Moscow</td>
+  <td>Blunt force trauma</td>
+</tr>
+
+<tr>
+  <td>Alexander Chugunov</td>
+  <td>47</td>
+  <td>2003</td>
+  <td>Bitsa Park</td>
+  <td>Blunt force trauma</td>
+</tr>
+
+<tr>
+  <td>Nikolai Makarov</td>
+  <td>63</td>
+  <td>2004</td>
+  <td>Moscow</td>
+  <td>Blunt force trauma</td>
+</tr>
+</table>
+</div>
+
+</div>
+<br>
+<br>
+
+
+
+<footer>
+  <div class="foot">
+
+    <div class="footer-container">
+
+      
+      <div id="gl" class="footer-col">
+        <h2 class="charge">Psychology</h2>
+        <p class="lion">
+          A psychopath is a person who exhibits a specific set of personality traits, including a lack of empathy, remorse, or guilt, combined with manipulative and often antisocial behavior.
+        </p>
+
+        <div class="icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+
+      
+      <div id="ex" class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="gp.html">History</a></li>
+          <li><a href="three.html">Psychologist</a></li>
+          <li><a href="crime.html">Crime Cases</a></li>
+          <li><a href="reserch.html">Researchers</a></li>
+        </ul>
+      </div>
+
+      
+      <div id="co" class="footer-col">
+        <h3 class="pen">Contact</h3>
+        <p class="em">Email: psychopath09@gmail.com</p>
+        <p class="em">Phone: +1800-599-0019</p>
+      </div>
+
+    </div>
+
+    <div class="bottom">
+      <p>© 2026 Psychology | All Rights Reserved</p>
+    </div>
+
+  </div>
+</footer>
+
+</head>
+</body>

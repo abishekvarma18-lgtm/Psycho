@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psychopathologie</title>
+       <link rel="icon" type="image/png" href="c99eba9f-4d53-43ad-94ac-0c3b8065f612.png">
+
+  <link rel="stylesheet" href="back.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<style>
+
+  body{
+    padding-top:100px;
+    background-color:#0B0F1A;
+    color: white;
+  }
+  .navbar{
+    width: 100%;
+  min-height: 80px;
+  background-image: url(wall.webp);
+  background-size: cover;
+  box-shadow: 0 3px 10px rgba(0,0,0,15);
+  position: fixed;
+}
+
+.navbar-toggler{
+border-color:white;
+}
+
+.navbar-toggler-icon{
+filter:invert(1);
+}
+ul{
+  padding-right: 40px;
+}
+.nav-link{
+color:white ! important;
+margin-right:50px;
+}
+
+.nav-link:hover{
+color:#FA8072 ! important;
+}
+#aa{
+  color: white;
+  cursor: pointer;
+  font-family: Creepster;
+  font-size: 30px;
+  padding-left: 20px;
+}
+#aa:hover{
+  color: #8B0000;   
+}
+
+input{
+  margin-right: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+img{
+  margin-left: 300px;
+}
+
+.re{
+  padding-left: 10px;
+  padding-right: 5px;
+  font-family: EB Garamond;
+  font-size: 19px;
+}
+
+@media (max-width: 768px) {
+  img{
+    margin: 30px;
+    width: 390px;
+  }
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+
+  overflow-x: hidden;
+}
+#co{
+  padding-left: 80px;
+}
+#ex{
+   padding-left: 140px;
+}
+#gl{
+  padding-left: 40px;
+}
+
+footer {
+  width: 100%;
+}
+
+.foot {
+  width: 100%;
+  background-color: black;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+
+.footer-container {
+  width: 96%;
+  height: 350px;
+  background-image:linear-gradient(rgb(0, 0, 0), rgb(255, 0, 0));
+  border-radius: 20px;
+  margin:10px;
+  margin-left: 33px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.footer-col ul li a:hover {
+  color: black;
+}
+
+.footer-col  {
+  flex: 1 1 250px;
+}
+
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+
+.bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.338);
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .foot {
+    padding: 20px;
+    height: 690px;
+  }
+
+
+  .footer-container {
+    flex-direction: row;
+    align-items: center;
+    text-align:center;
+    height: 600px;
+    margin:auto 
+  }
+
+  .footer-col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .icons {
+    justify-content: left;
+  }
+
+  .bottom {
+    width: 100%;
+    text-align: center;
+  }
+
+    #ex{
+    margin-right: 150px;
+    padding: 0%;
+    text-align: left;
+  }
+  #co{
+    margin-right:0px;
+    padding: 0%;
+    text-align: left;
+  }
+  #gl{
+    padding: 0%;
+  }
+  .lion{
+    padding: 0%;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .charge{
+    text-align: left;
+  }
+
+}
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <a id="aa" class="navbar-brand"  href="#">Psychology</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a id="hh" class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a id="pp" class="nav-link" href="gp.html">History</a>
+        </li>
+        <li class="nav-item">
+          <a id="cc" class="nav-link" href="three.html">Psychologist</a>
+        </li>
+        <li class="nav-item">
+          <a id="rr" class="nav-link" href="crime.html">Crime Cases</a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link" href="reserch.html">Researchers</a>
+        </li>
+      </ul>
+    </div>
+    <input type="text" placeholder="search">
+  </nav>
+  <br>
+
+<center>
+    <h1 style="color:#8B0000;   font-family: EB Garamond;"> The 12 Most Influential Psychologists</h1>
+</center>    
+    <br>
+    <br>
+<div class="re">    
+    <div>
+      <h2> 1 . Steven Arthur Pinker</h2>
+      <h2>Specialization: Cognitive Science, Linguistics, Evolutionary Psychology</h2>
+      <br>
+      <img src="steve.jpg" width="900px">
+      <br>
+      <br>
+      <h5>Steven Arthur Pinker (born September 18, 1954) is a Canadian cognitive psychologist, psycholinguist, popular science author, and public intellectual. He is an advocate of evolutionary psychology and the computational theory of mind.Pinker is the Johnstone Family Professor of Psychology at Harvard University.</h5>
+       <br>
+       <br>
+       <p style="font-size: 19px;">Steven Pinker, a prominent cognitive scientist and linguist, is best known for his work on language and the mind. His research has explored the connections between language, thought, and human nature, making significant contributions to evolutionary psychology.<span style="color: skyblue;">Pinker’s books, such as “The Better Angels of Our Nature” and “How the Mind Works,”</span>  have popularized complex ideas about the evolution of human behavior and cognition. <br>
+      Steven Pinker specializes in visual cognition and developmental linguistics, as well as a number of experimental topics. Pinker has written two technical books that proposed a general theory of language acquisition. In particular, his work with Alan Prince posited that children use default rules sometimes in error but are obliged to learn irregular forms one by one. Pinker is the author of nine books for general audiences. The Language Instinct (1994), How the Mind Works (1997), Words and Rules (2000), The Blank Slate (2002), and The Stuff of Thought (2007) posit that language is an innate behavior shaped by natural selection and adapted to our communication needs. Pinker's The Sense of Style (2014) is a general language-oriented style guide.
+       <a href="https://en.wikipedia.org/wiki/Steven_Pinker">more to learn</a></p>
+    </div>
+    <br>
+    <br>
+
+        <div>
+      <h2> 2 . Daniel Kahneman</h2>
+      <h2>Specialization: Behavioral Economics, Cognitive Bias, Decision Making</h2>
+      <br>
+      <img src="kahneman.webp" width="900px">
+      <br>
+      <br>
+      <h5>Daniel Kahneman ; March 5, 1934 – March 27, 2024 was an Israeli-American psychologist best known for his work on the psychology of judgment and decision-making as well as behavioral economics, for which he was awarded the 2002 Nobel Memorial Prize in Economic Sciences together with Vernon L. Smith. Kahneman's published empirical findings challenge the assumption of human rationality prevailing in modern economic theory. Kahneman became known as the "grandfather of behavioral economics."</h5>
+       <br>
+       <br>
+       <p style="font-size: 19px;"> Daniel Kahneman, a Nobel laureate in economics, is one of the most influential psychologists in the realm of behavioral economics. <span style="color: skyblue;">His groundbreaking book “Thinking, Fast and Slow”</span> outlines the two systems of thinking—fast, intuitive thinking and slow, deliberate thinking—and how they influence our decision-making processes. Kahneman’s work on cognitive biases, heuristics, and the ways people make judgments has had a profound impact on psychology, economics, and public policy.With Amos Tversky and others, Kahneman established a cognitive basis for common human errors that arise from heuristics and biases, and developed prospect theory. In 2011, Kahneman was named by Foreign Policy magazine in its list of top global thinkers. In the same year, his book Thinking, Fast and Slow, which summarizes much of his research, was published and became a best seller. In 2015, The Economist listed him as the seventh most influential economist in the world.
+       Kahneman was professor emeritus of psychology and public affairs at Princeton University's Princeton School of Public and International Affairs. Kahneman was a founding partner of TGG Group, a business and philanthropy consulting company. He was married to cognitive psychologist and Royal Society Fellow Anne Treisman, who died in 2018 
+       <a href="https://en.wikipedia.org/wiki/Daniel_Kahneman">more to learn</a></p>
+    </div>
+    <br>
+    <br>
+
+        <div>
+      <h2> 3 . Angela Lee Duckworth</h2>
+      <h2>Specialization: Positive Psychology, Grit, Motivation</h2>
+      <br>
+      <img src="Angela.webp" width="900px">
+      <br>
+      <br>
+      <h5>Angela Lee Duckworth (born 1970) is an American academic, psychologist, and popular science author. She is the Rosa Lee and Egbert Chang Professor of Psychology at the University of Pennsylvania, where she studies grit and self-control. She is the founder and former CEO of Character Lab, a not-for-profit whose mission is to advance the science and practice of character development.</h5>
+       <br>
+       <br>
+       <p style="font-size: 19px;">Angela Duckworth is best known for her research on grit, a combination of passion and perseverance for long-term goals.<span style="color: skyblue;">Duckworth’s book, “Grit: The Power of Passion and Perseverance,”</span>  has become a widely acclaimed resource for understanding how resilience and determination contribute to success.
+
+Her work emphasizes the importance of effort and persistence, challenging the traditional focus on intelligence or talent as the primary factors in achievement. Duckworth’s contributions have revolutionized education, organizational behavior, and the study of motivation. .
+        
+       <a href="https://en.wikipedia.org/wiki/Angela_Duckworth">more to learn</a></p>
+    </div>  
+    <br>
+    <br>
+    
+        <div>
+      <h2> 4 .Martin Elias Peter Seligman</h2>
+      <h2>Specialization: Positive Psychology, Well-being, Resilience</h2>
+      <br>
+      <img src="Martin.webp" width="900px">
+      <br>
+      <br>
+      <h5>Martin Elias Peter Seligman  born August 12, 1942 is an American psychologist, educator, and author of self-help books. Seligman is a strong promoter within the scientific community of his theories of well-being and positive psychology.His theory of learned helplessness is popular among scientific and clinical psychologists. A Review of General Psychology survey, published in 2002, ranked Seligman as the 31st most cited psychologist of the 20th century.</h5>
+       <br>
+       <br>
+       <p style="font-size: 19px;">As one of the founders of positive psychology, Martin Seligman’s work has influenced countless studies on well-being, happiness, and resilience. His concept of learned optimism and his research on happiness have reshaped how we view mental health. Seligman’s ideas have inspired numerous interventions aimed at improving mental health by focusing on strengths, gratitude, and resilience rather than just addressing illness.
+
+His influence extends beyond academia, with initiatives that promote well-being in schools, workplaces, and communities.Seligman is the Zellerbach Family Professor of Psychology in the University of Pennsylvania's Department of Psychology. He was previously the Director of the Clinical Training Program in the department, and earlier taught at Cornell University. He is the director of the university's Positive Psychology Center. Seligman was elected president of the American Psychological Association for 1998. He is the founding editor-in-chief of Prevention and Treatment (the APA electronic journal) and is on the board of advisers of Parents magazine.
+
+Seligman has written about positive psychology topics in books such as The Optimistic Child, Child's Play, Learned Optimism, Authentic Happiness, and Flourish. His most recent book, Tomorrowmind, co-written with Gabriella Rosen Kellerman, was published in 2023.
+        
+       <a href="https://en.wikipedia.org/wiki/Martin_Seligman">more to learn</a></p>
+    </div>
+    <br>
+    <br>
+        <div>
+      <h2> 5 . Elizabeth F. Loftus</h2>
+      <h2>Specialization: Memory, Eyewitness Testimony, Cognitive Psychology</h2>
+      <br>
+      <img src="Elizabeth-Loftus.webp" width="900px">
+      <br>
+      <br>
+      <h5>Elizabeth F. Loftus (born 1944) is an American psychologist who is best known in relation to the misinformation effect, false memory and criticism of recovered memory therapies.
+
+Loftus's research includes the effects of phrasing on the perceptions of automobile crashes, the "lost in the mall" technique and the manipulation of food preferences through the use of false memories. In the Jane Doe case that began in 1997, Loftus and Melvin J. Guyer revealed serious concerns about the background and validity of the initial research. </h5>
+       <br>
+       <br>
+       <p style="font-size: 19px;">Elizabeth Loftus is a leading figure in the field of memory and cognitive psychology. Her research on the malleability of memory, particularly in the context of eyewitness testimony, has had a profound impact on the legal system. Loftus’s work challenges the reliability of human memory and has led to changes in how eyewitness testimony is handled in courts.
+
+Her studies on false memories and the way memories can be altered by suggestion have opened up new pathways for understanding the complex nature of human recollection. From 1970 to 1973, Loftus was employed as a cognitive psychologist at the New School for Social Research in New York City,: 17  after becoming dissatisfied with university work such as calibrating math and word problems for fifth-grade students.: 17  At the time, she had also been investigating semantic memory with Professor Jonathan Freedman at Stanford University.: 17 
+
+Loftus was employed at the University of Washington from 1973 to 2001, initially as an assistant professor. She shifted from laboratory work to using "real world" situations of criminal court cases.
+        
+       <a href="https://en.wikipedia.org/wiki/Elizabeth_Loftus">more to learn</a></p>
+    </div>
+    <br>
+    <br>
+ 
+        <div>
+      <h2> 6 . John Mordechai Gottman </h2>
+      <h2>Specialization: Relationship Psychology, Couples Therapy, Emotional Intelligence</h2>
+      <br>
+      <img src="John.jpg" width="900px">
+      <br>
+      <br>
+      <h5>John Mordechai Gottman (born April 26, 1942) is an American psychologist and professor emeritus of psychology at the University of Washington. His research focuses on divorce prediction and marital stability through relationship analyses. Gottman's work is centered on the field of relationship counseling: enhanced relationship functioning and mitigation of behaviors detrimental to human relationships. Gottman's work has also contributed to the development of important concepts on social sequence analysis</h5>
+       <br>
+       <br>
+       <p style="font-size: 19px;">John Gottman is a renowned psychologist known for his research on relationships and marital stability. He has spent decades studying couples and identifying key factors that contribute to the success or failure of relationships. His work has introduced the idea of the “Four Horsemen of the Apocalypse”—four communication patterns that predict divorce, and his methods have been widely adopted in couples therapy.
+
+Gottman’s work has not only advanced relationship psychology but also provided practical tools for improving communication and emotional intelligence in relationships. John Gottman was born on April 26, 1942, in the Dominican Republic to Orthodox Jewish parents. His father was a rabbi in pre-World War II Vienna. Gottman was educated in a Lubavitch Yeshiva Elementary School in Brooklyn. Gottman practices Conservative Judaism, keeps kosher (follows Jewish dietary laws) and observes Shabbat.
+
+In 1987, he married Julie Schwartz, a psychotherapist. His two previous marriages had ended in divorce.[6] He has a daughter named Moriah Gottman. John and Julie Gottman live in Washington state.
+        
+       <a href="https://en.wikipedia.org/wiki/John_Gottman">more to learn</a></p>
+    </div>  
+    <br>
+    <br> 
+    
+        <div>
+      <h2> 7 . Bessel van der Kolk</h2>
+      <h2>Specialization: Trauma, PTSD, Psychotherapy</h2>
+      <br>
+      <img src="BVK.webp" width="900px">
+      <br>
+      <br>
+      <h5>Bessel van der Kolk; born July 1943 is a Boston-based Dutch-American psychiatrist, author, researcher and educator. Since the 1970s his research has been in the area of post-traumatic stress. He is the author of four books, including The New York Times best seller, The Body Keeps the Score, which was translated into 43 languages. Scientists have criticized the book for promoting pseudoscientific claims about trauma, memory, the brain, and development.</h5>
+       <br>
+       <br>
+       <p style="font-size: 19px;">Bessel van der Kolk is a leading expert on trauma and its effects on mental health, particularly post-traumatic stress disorder (PTSD). His groundbreaking book “The Body Keeps the Score” has become a classic in the field, examining how trauma affects both the mind and body. Van der Kolk has played a crucial role in developing trauma-informed therapeutic practices, influencing how therapists work with individuals who have experienced abuse, neglect, and other forms of trauma.
+
+His contributions have been critical in changing the conversation around mental health and trauma, advocating for more holistic and empathetic treatment approaches.Van der Kolk was born in the Netherlands in July 1943. The Hague was occupied by the Nazis at the time and his father was sent to a work-camp. He was the middle child of five. His mother taught her children to play musical instruments. Bessel played piano and cello and was taught six languages.
+        
+       <a href="https://en.wikipedia.org/wiki/Bessel_van_der_Kolk">more to learn</a></p>
+    </div> 
+    <br>
+    <br>
+    
+        <div>
+      <h2> 8 .  Susan Horowitz Cain </h2>
+      <h2>Specialization: Introversion, Personality Psychology, Social Behavior</h2>
+      <br>
+      <img src="susan.webp" width="900px">
+      <br>
+      <br>
+      <h5>Susan Horowitz Cain (born 1968) is an American writer and lecturer.
+
+She is the author of the 2012 non-fiction book Quiet: The Power of Introverts in a World That Can't Stop Talking, which argues that modern Western culture misunderstands and undervalues the traits and capabilities of introverted people. In 2015, she co-founded Quiet Revolution, a mission-based company with initiatives in the areas of children (parenting and education), lifestyle, and the workplace. Her 2016 follow-on book, Quiet Power: The Secret Strengths of Introverts, focused on introverted children and teens, the book also being directed to their educators and parents</h5>
+       <br>
+       <br>
+       <p style="font-size: 19px;">Susan Cain is best known for her work on the psychology of introversion. Her book, “Quiet: The Power of Introverts in a World That Can’t Stop Talking,” challenges the cultural preference for extroversion and highlights the strengths and contributions of introverted individuals. Cain’s work has reshaped the way we understand personality and has influenced educational and workplace environments to accommodate different temperaments.
+
+Cain’s advocacy for introverts has led to a broader recognition of the value of quiet reflection and the need for diverse personality types in social and professional settings. Cain worked for seven years as an attorney at Cleary Gottlieb Steen & Hamilton, and then as a negotiations consultant as owner and principal of The Negotiation Company. She has been a fellow and a faculty/staff member of the Woodhull Institute for Ethical Leadership, an educational non-profit organization.
+        
+       <a href="https://en.wikipedia.org/wiki/Susan_Cain">more to learn</a></p>
+    </div>  
+    <br>
+    <br>  
+    
+        <div>
+      <h2> 9 . Carol Susan Dweck </h2>
+      <h2>Specialization: Motivation, Growth Mindset, Achievement</h2>
+      <br>
+      <img src="carol.webp" width="900px">
+      <br>
+      <br>
+      <h5>Carol Susan Dweck (born October 17, 1946) is an American psychologist. She holds the Lewis and Virginia Eaton Professorship of Psychology at Stanford University. Dweck is known for her work on motivation and mindset. She was on the faculty at the University of Illinois, Harvard, and Columbia before joining the Stanford University faculty in 2004. She was named an Association for Psychological Science (APS) James McKeen Cattell Fellow in 2013, an APS Mentor Awardee in 2019, and an APS William James Fellow in 2020, and has been a member of the National Academy of Sciences since 2012.</h5>
+       <br>
+       <br>
+       <p style="font-size: 19px;">Carol Dweck is a pioneering psychologist known for her research on mindsets and motivation. Her concept of the “growth mindset”—the belief that abilities and intelligence can be developed through hard work, dedication, and learning—has transformed the fields of education and personal development. Her book, “Mindset: The New Psychology of Success,” has become a foundational text for educators, parents, and coaches alike.
+
+Dweck’s research has demonstrated that fostering a growth mindset can lead to greater success in learning, performance, and personal growth.In her sixth grade class at the P.S. 153 elementary school in Brooklyn, New York, students were seated in order of their IQ; some responsibilities like erasing the blackboard and carrying the flag were reserved to students with the highest IQs. She later described becoming "increasingly afraid to risk her reputation as one of the most intelligent children in the class".
+        
+       <a href="https://en.wikipedia.org/wiki/Carol_Dweck">more to learn</a></p>
+    </div> 
+    <br>
+    <br>
+    
+        <div>
+      <h2> 10 . Sherry Turkle </h2>
+      <h2>Specialization: Technology, Social Behavior, Human-Computer Interaction</h2>
+      <br>
+      <img src="sherry.jpg" width="900px">
+      <br>
+      <br>
+      <h5>Sherry Turkle (born June 18, 1948) is an American sociologist. She is the Abby Rockefeller Mauzé Professor of the Social Studies of Science and Technology at the Massachusetts Institute of Technology. She obtained a BA in social studies and later a PhD in sociology and personality psychology at Harvard University. She now focuses her research on psychoanalysis and human-technology interaction. She has written several books focusing on the psychology of human relationships with technology, especially in the realm of how people relate to computational objects[clarification needed]. Her memoir 'Empathy Diaries' received excellent critical reviews.</h5>
+       <br>
+       <br>
+       <p style="font-size: 19px;">Sherry Turkle is a psychologist and sociologist known for her research on the relationship between technology and human interaction. In her books like “Reclaiming Conversation” and “Alone Together”, Turkle explores how digital devices affect our communication and social behavior, particularly the negative consequences of technology on face-to-face interactions.
+
+Her work has sparked important discussions about the impact of technology on mental health, relationships, and society, urging us to find a balance between virtual and real-world interactions.In The Second Self, she writes about how computers are not tools as much as they are a part of our social and psychological lives, writing that technology "catalyzes changes not only in what we do but in how we think." She goes on using Jean Piaget's psychology discourse to discuss how children learn about computers and how this affects their minds. The Second Self was received well by critics and was praised for being "a very thorough and ambitious study".
+        
+       <a href="https://en.wikipedia.org/wiki/Sherry_Turkle">more to learn</a></p>
+    </div>  
+    <br>
+    <br>
+    
+        <div>
+      <h2> 11 . Richard J. Davidson </h2>
+      <h2>Specialization: Neuroscience, Emotion, Meditation</h2>
+      <br>
+      <img src="richard.webp" width="900px">
+      <br>
+      <br>
+      <h5>Richard J. Davidson (born December 12, 1951) is an American psychologist and professor of psychology and psychiatry at the University of Wisconsin–Madison as well as founder and chair of the Center for Healthy Minds and the affiliated non-profit Healthy Minds Innovations.</h5>
+       <br>
+       <br>
+       <p style="font-size: 19px;">Richard Davidson is a leading neuroscientist whose work focuses on the brain’s role in emotional regulation, meditation, and well-being. His research on neuroplasticity and the effects of mindfulness meditation has led to a deeper understanding of how practices like meditation can change the brain and improve emotional well-being. Davidson’s work at the Center for Healthy Minds has been instrumental in advancing the science of happiness and well-being.
+
+His research continues to shape how we think about mental health, resilience, and the potential of meditation to improve our lives.Born to a Jewish family in Brooklyn, Davidson attended Midwood High School. While there, between 1968–1971, he worked as a summer research assistant in the sleep laboratory at nearby Maimonides Medical Center cleaning electrodes that had been affixed to subjects' bodies for sleep studies.
+        
+       <a href="https://en.wikipedia.org/wiki/Richard_Davidson">more to learn</a></p>
+    </div> 
+    <br>
+    <br>
+    
+        <div>
+      <h2> 12 . Kay Redfield Jamison </h2>
+      <h2>Specialization: Mood Disorders, Bipolar Disorder, Psychiatry</h2>
+      <br>
+      <img src="KayJamison.webp" width="900px">
+      <br>
+      <br>
+      <h5>Kay Redfield Jamison (born June 22, 1946) is an American clinical psychologist and writer. Her work has centered on bipolar disorder, which she has had since her early adulthood. She holds the post of the Dalio Professor in Mood Disorders and Psychiatry at Johns Hopkins University School of Medicine and is an Honorary Professor of English at the University of St Andrews.</h5>
+       <br>
+       <br>
+       <p style="font-size: 19px;">Kay Redfield Jamison is a clinical psychologist and psychiatrist whose work has focused on bipolar disorder and mood disorders. She is a leading expert in understanding the emotional and psychological aspects of these conditions, and her autobiographical work, “An Unquiet Mind,” has offered profound insights into living with bipolar disorder.
+
+Jamison’s work has been instrumental in reducing stigma around mental illness, especially in relation to mood disorders, and has paved the way for more compassionate and effective treatment.Jamison began her study of clinical psychology at University of California, Los Angeles in the late 1960s, receiving both B.A. and M.A. degrees in 1971. She continued on at UCLA, receiving a C.Phil. in 1973 and a PhD in 1975, and became a faculty member at the university. 
+        
+       <a href="https://en.wikipedia.org/wiki/Kay_Redfield_Jamison">more to learn</a></p>
+    </div>     
+</div>
+
+<br>
+<br>
+
+<footer>
+<footer>
+  <div class="foot">
+
+    <div class="footer-container">
+
+      
+      <div id="gl" class="footer-col">
+        <h2 class="charge">Psychology</h2>
+        <p class="lion">
+          A psychopath is a person who exhibits a specific set of personality traits, including a lack of empathy, remorse, or guilt, combined with manipulative and often antisocial behavior.
+        </p>
+
+        <div class="icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+
+      
+      <div id="ex" class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="gp.html">History</a></li>
+          <li><a href="three.html">Psychologist</a></li>
+          <li><a href="crime.html">Crime Cases</a></li>
+          <li><a href="reserch.html">Researchers</a></li>
+        </ul>
+      </div>
+
+      
+      <div id="co" class="footer-col">
+        <h3>Contact</h3>
+        <p>Email:  psychopath09@gmail.com</p>
+        <p>Phone: +1800-599-0019</p>
+      </div>
+
+    </div>
+
+    <div class="bottom">
+      <p>© 2026 Psychology | All Rights Reserved</p>
+    </div>
+
+  </div>
+</footer>
+
+  </div>
+</footer>
+</body>
+</html>
