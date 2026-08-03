@@ -58,7 +58,7 @@ color:#FA8072 ! important;
 }
 
 .nav-link {
-  color: white !important;
+  color: rgb(250, 5, 5) !important;
   font-size: 17px;
   letter-spacing: 0.3px;
   position: relative;
@@ -73,12 +73,12 @@ color:#FA8072 ! important;
   bottom: 0;
   width: 0;
   height: 2px;
-  background: #FA8072;
+  background: #f5f5f5;
   transition: width 0.25s ease;
 }
 
 .nav-link:hover {
-  color: #FA8072 !important;
+  color: #fdfdfd !important;
 }
 
 .nav-link:hover::after {
