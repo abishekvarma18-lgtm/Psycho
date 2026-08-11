@@ -26,7 +26,7 @@ body{
 .navbar{
     width: 100%;
   min-height: 80px;
-  background-image: url(wall.webp);
+  background-image: url(1000.jpg);
   background-size: cover;
   box-shadow: 0 3px 10px rgba(0,0,0,15);
   position: fixed;
@@ -62,7 +62,7 @@ color:#e6dcdb ! important;
 }
 
 .nav-link {
-  color: rgb(230, 15, 15) !important;
+  color: rgb(252, 252, 252) !important;
   font-size: 17px;
   letter-spacing: 0.3px;
   position: relative;
@@ -77,12 +77,12 @@ color:#e6dcdb ! important;
   bottom: 0;
   width: 0;
   height: 2px;
-  background: #f1eceb;
+  background: #ff0000;
   transition: width 0.25s ease;
 }
 
 .nav-link:hover {
-  color: #fffafa !important;
+  color: #ff0000 !important;
 }
 
 .nav-link:hover::after {
@@ -276,19 +276,100 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.338);
   padding-top: 10px;
 }
-@media (max-width: 767px) {
-    footer {
-        display: none;
-    }
+@media (max-width: 768px) {
+  footer {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .foot {
+    width: 92%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .footer-container {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-col {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
 }
 
-
 @media (max-width: 768px) {
-    .footer {
-        display: block;
-    }
+  .page-layout {
+    display: block !important;
+  }
 
-} 
+  .sidebar {
+    display: none !important;
+  }
+
+  .content {
+    width: 100% !important;
+    margin-left: 0 !important;
+    padding: 15px !important;
+  }
+
+  .foot {
+    padding: 20px;
+    height: 710px;
+  }
+
+
+  .footer-container {
+    flex-direction: row;
+    align-items: center;
+    text-align:center;
+    height: 630px;
+    margin:auto 
+  }
+ 
+
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #ex{
+    margin-right: 150px;
+    padding: 0%;
+    text-align: left;
+  }
+  #co{
+    margin-right:0px;
+    padding: 0%;
+    text-align: left;
+  }
+  #gl{
+    padding: 0%;
+  }
+  .lion{
+    padding: 0%;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .charge{
+    text-align: left;
+  }
+
+  .icons {
+    justify-content: left;
+  }
+
+  .bottom {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
 
 
 
